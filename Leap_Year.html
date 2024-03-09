@@ -81,7 +81,8 @@
 </head>
 <body>
 <div class="container">
-    <h1>Leap Year Checker</h1>
+    <h1>Leap Year Checker</h1> 
+    <h6>(Type the year and press the enter button/click the check button)</h6>
     <h5>Click the Mouse On February 29 ! Happy Leap Year</h5>
     <input type="number" id="yearInput" placeholder="Enter a year" onkeydown="handleKeyDown(event)"/>
     <button onclick="checkLeapYear()" id="checkButton">Check</button>
@@ -89,7 +90,7 @@
     <table id="calendarTable"></table>
 </div>
 <footer>
-    <small>&copy; Copyright 2023,<span id="nameSpan" class="jicjak"> Developed By : Zahir Khan</span></small>
+    <small>&copy; Copyright- 2023-2024,<span id="nameSpan" class="jicjak"> Developed By : Zahir Khan</span></small>
 </footer>
 <script>
     function handleKeyDown(event) {
@@ -152,7 +153,7 @@
             dayCounter++;
         }
 
-        // Insert cells for each day of the month
+        // Insert cells for each day of the month----
         for (var day = 1; day <= totalDays; day++) {
             if (dayCounter === 7) {
                 // Start a new row after 7 days (a week)
